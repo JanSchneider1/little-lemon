@@ -11,6 +11,10 @@ nav {
   align-items: center;
   gap: 1vw;
 }
+a {
+  font-family: "Karla";
+  font-weight: bold;
+}
 
 footer {
   display: flex;
