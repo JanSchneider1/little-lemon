@@ -1,3 +1,17 @@
+/* General text styling */
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h1, h2 {
+  font-family: "Markazi Text";
+}
+p {
+  font-family: "Karla";
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -14,6 +28,26 @@ nav {
 a {
   font-family: "Karla";
   font-weight: bold;
+}
+
+/* Hero */
+#hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2vw 0 2vw;
+  background-color: #495E57;
+}
+#hero h1 {
+  color: #F4CE14;
+}
+#hero h2, #hero p {
+  color: white;
+}
+#hero img {
+  width: 20vw;
+  height: 20vw;
+  object-fit: cover;
+  border-radius: 16px;
 }
 
 footer {
