@@ -1,8 +1,3 @@
-import Hero from "../components/Hero";
-
-export default function Main() {
-    return (<main>
-        Main
-        <Hero/>
-    </main>);
+export default function Main({children}) {
+    return <main> {children} </main>;
 }

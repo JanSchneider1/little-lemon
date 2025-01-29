@@ -69,7 +69,7 @@ export default function BookingForm({availableTimes, updateAvailableTimes, submi
             </select>
             <InputErrorMessage error={formik.errors.occasion}/>
 
-            <input type="submit" value="Make Your reservation" aria-label="Submit reservation"/>
+            <input className="linkButton" type="submit" value="Make Your reservation" aria-label="Submit reservation"/>
         </form>
     );
 }

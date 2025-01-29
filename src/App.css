@@ -8,8 +8,23 @@ h2 {
 h1, h2 {
   font-family: "Markazi Text";
 }
-p {
+p, button, label, input {
   font-family: "Karla";
+}
+
+/** Styling for general components */
+button, .linkButton {
+  padding: 10px 10px 10px 10px;
+  border-radius: 16px;
+  border: 0;
+  background-color: #F4CE14;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+button:hover, .linkButton:hover {
+  opacity: 0.75;
 }
 
 header {
@@ -46,8 +61,25 @@ a {
 #hero img {
   width: 20vw;
   height: 20vw;
+  margin: 2vw 2vw 2vw 2vw;
   object-fit: cover;
   border-radius: 16px;
+}
+#hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40vw;
+  padding-bottom: 10px;
+}
+#hero-left * {
+  margin: 0;
+}
+#hero-left h2 {
+  margin-top: -1.5rem;
+}
+#hero-left button {
+  width: 50%;
 }
 
 footer {
@@ -60,5 +92,20 @@ footer {
 form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  gap: 5px;
+  width: 40vw;
+}
+form input, form select {
+  font-size: 1.5rem;
+}
+form label {
+  color: white;
+  font-size: 2rem;
+}
+form .linkButton {
+  margin-top: 20px;
+  width: 50%;
 }

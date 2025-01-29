@@ -5,6 +5,7 @@ import BookingForm from "../components/BookingForm";
 import {useReducer} from "react";
 import {useNavigate} from "react-router";
 import {bookTable, initializeTimes, updateTimes} from "../services/BookingService";
+import greek_salad from "../images/greek_salad.jpg";
 
 export default function BookingPage() {
     const [availableTimes, updateAvailableTimes] = useReducer(updateTimes, initializeTimes(new Date()));
@@ -13,13 +14,17 @@ export default function BookingPage() {
 
     return (
         <>
-            <Header></Header>
-            <BookingForm availableTimes={availableTimes}
-                         updateAvailableTimes={updateAvailableTimes}
-                         submitForm={(data) => submitForm(data, navigate)}
-            />
-            <Main></Main>
-            <Footer></Footer>
+            <Header/>
+            <Main>
+                <section id="hero">
+                    <BookingForm availableTimes={availableTimes}
+                                 updateAvailableTimes={updateAvailableTimes}
+                                 submitForm={(data) => submitForm(data, navigate)}
+                    />
+                    <img src={greek_salad} alt="greek_salat"/>
+                </section>
+            </Main>
+            <Footer/>
         </>
     );
 }

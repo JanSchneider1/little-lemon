@@ -1,14 +1,16 @@
 import Header from "../sections/Header";
 import Main from "../sections/Main";
 import Footer from "../sections/Footer";
+import Hero from "../components/Hero";
 
 export default function Homepage() {
     return (
         <>
-            <Header></Header>
-            Homepage
-            <Main></Main>
-            <Footer></Footer>
+            <Header/>
+            <Main>
+                <Hero/>
+            </Main>
+            <Footer/>
         </>
     );
 }
