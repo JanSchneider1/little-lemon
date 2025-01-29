@@ -55,3 +55,10 @@ footer {
   justify-content: space-between;
   padding: 2vh 2vw 2vh 2vw;
 }
+
+/* Booking Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
